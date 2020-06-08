@@ -1,0 +1,21 @@
+.text-field{
+    -fx-background-color: cornflowerblue;
+    -fx-font-size: 15;
+    -fx-font-style: italic;
+    -fx-font-family: cursive;
+}
+
+.text-area .content{
+    -fx-background-color: lightblue;
+}
+
+.text-area{
+     -fx-font-size: 18;
+     -fx-text-fill: darkslateblue;
+}
+
+.button{
+    -fx-background-color: steelblue;
+    -fx-font-size: 13;
+    -fx-font-style: normal;
+}
