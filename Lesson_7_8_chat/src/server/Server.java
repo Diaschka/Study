@@ -45,13 +45,14 @@ public class Server {
         }
     }
 
-    public void privateMsg(ClientHandler sender, String receiver, String msg) {
+    public void privateMsg(ClientHandler sender, String receiver, String message) {
+        String privateMessage = String.format("This message is private. From user [ %s ] to [ %s ]: [ %s ] ",sender.getNick(),receiver,message);
 
         for (ClientHandler c: clients) {
-            if(c.getNick().equals(receiver)){
-                c.sendMsg(msg);
+            if(c.getNick().equalsIgnoreCase(receiver)){
+                c.sendMsg(privateMessage);
                 if(!sender.getNick().equals(receiver)){
-                    sender.sendMsg(msg);
+                    sender.sendMsg(privateMessage);
                 }
                 return;
             }
