@@ -18,9 +18,10 @@ public class Main {
             boxOrange1.addFruit(new Orange());
 
         // подсчет веса одной коробки
-        boxApples1.equals(boxApples2);
-        boxApples1.equals(boxOrange1);
-        boxApples2.equals(boxOrange1);
+
+        boxApples1.compare(boxApples2);
+        boxApples1.compare(boxOrange1);
+        boxApples2.compare(boxOrange1);
 
         boxApples1.move(boxApples2);
         //boxApples1.move(boxOrange1);
